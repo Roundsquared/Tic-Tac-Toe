@@ -2,3 +2,48 @@ body{
     height:100vh;
     background-color: slategray;
 }
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height:100%;
+}
+#gameboard{
+    grid-row:span 3/5;
+    grid-column: span 3/5;
+    background-color: aliceblue;
+    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    place-content: center;
+    place-items: center;
+}
+button{
+    grid-row:1;
+    grid-column:3;
+}
+.row{
+    grid-column:span 3/4;
+    grid-row:span 1;
+    background-color: aquamarine;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 1fr;
+    place-content: center;
+    place-items: center;
+    
+}
+.piece{
+    grid-row:span 1;
+    grid-column:span 1;
+    background-color: brown;
+    width:100%;
+    height:100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    border:5px solid black;
+}
